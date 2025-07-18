@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Hero Section */
+.bg-hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header {
+  z-index: 100;
+}
+
+header .container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Desktop Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0d6efd;
+}
+
+nav .btn-outline-dark {
+  border-radius: 50px;
+  padding: 8px 25px;
+  transition: all 0.3s ease;
+}
+
+nav .btn-outline-dark:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Hero Text */
+.hero-text {
+  max-width: 50%;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.hero-text span {
+  position: relative;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.hero-text span::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #0d6efd;
+}
+
+.hero-text p {
+  color: #d3d3d3;
+  margin-bottom: 20px;
+}
+
+.hero-text .btn {
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-text .btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Offcanvas (Mobile Menu) */
+.offcanvas {
+  background-color: #f8f9fa;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-header img {
+  height: 30px;
+}
+
+.offcanvas-body {
+  padding: 20px;
+}
+
+.offcanvas-body nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offcanvas-body a {
+  color: #333;
+  text-decoration: none;
+}
+
+.offcanvas-body a:hover {
+  color: #0d6efd;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  /* Mobile View for Hero Section */
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text .btn {
+    font-size: 14px;
+  }
+
+  /* Show Hamburger Menu */
+  .d-lg-none {
+    display: block;
+  }
+
+  /* Hide Desktop Menu */
+  .d-none {
+    display: block !important;
+  }
+}
